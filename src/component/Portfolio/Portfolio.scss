@@ -1,0 +1,38 @@
+@import "./../../index.scss";
+
+.Portfolio {
+  background-color: #f6f6f6;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  .headPortfolio {
+    h2 {
+      @include special-heading;
+      @media (max-width: 440px) {
+        font-size: 65px;
+      }
+    }
+    p {
+      text-align: center;
+      margin-top: -30px;
+    }
+  }
+  .boxesPortfolio {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0 30px;
+    .boxPortfolio {
+      background-color: white;
+      .contBoxPortf {
+        padding: 20px;
+      }
+      img {
+        max-width: 100%;
+      }
+      p {
+        line-height: 1.6;
+        color: #777;
+      }
+    }
+  }
+}

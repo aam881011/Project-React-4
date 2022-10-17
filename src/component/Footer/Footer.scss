@@ -1,0 +1,14 @@
+@import "./../../index.scss";
+
+.footer {
+  text-align: center;
+  background-color: #2c4755;
+  padding: 30px 10px;
+  color: white;
+  font-size: 18px;
+  width: 100%;
+  span {
+    font-weight: bold;
+    color: $main-color;
+  }
+}

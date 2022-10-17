@@ -1,0 +1,46 @@
+@import "./../../index.scss";
+
+.contact {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  .contactHead {
+    h2 {
+      @include special-heading;
+      @media (max-width: 440px) {
+        font-size: 70px;
+      }
+    }
+    p {
+      text-align: center;
+      margin-top: -30px;
+      font-size: 18px;
+      color: #797979;
+    }
+  }
+  .textContact {
+    text-align: center;
+    padding: 60px 0;
+    p {
+      font-size: 35px;
+      font-weight: 800;
+      color: #2c4755;
+      letter-spacing: -2px;
+    }
+    a {
+      display: inline-block;
+      font-size: 35px;
+      font-weight: 800;
+      color: $main-color;
+      text-decoration: none;
+      @media (max-width: 440px) {
+        font-size: 25px;
+      }
+    }
+  }
+  .social {
+    p {
+      text-align: center;
+      margin-top: -30px;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+@import "./../../index.scss";
+
+.services {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  .headerServices {
+    h2 {
+      @include special-heading;
+    }
+    p {
+      margin: -30px 0 0;
+      font-size: 20px;
+      text-align: center;
+      color: #797979;
+    }
+    @media (max-width: 767px) {
+      h2 {
+        font-size: 60px;
+      }
+      p {
+        margin: -20px;
+      }
+    }
+  }
+  .boxes {
+    margin-top: 90px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 20px 50px;
+    justify-content: center;
+    @media (max-width: 992px) {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      justify-content: center;
+    }
+    .boxServices {
+      display: flex;
+      svg {
+        color: $main-color;
+        padding-right: 20px;
+        font-size: 30px;
+      }
+      h3 {
+        margin: 0 0 20px;
+      }
+      p {
+        font-weight: 300;
+        line-height: 1.6;
+      }
+    }
+  }
+}
